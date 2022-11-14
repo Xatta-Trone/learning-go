@@ -82,33 +82,36 @@ func main() {
 	// begum("asdf")
 
 	// testFunc(names,begum)
-	// fmt.Println(add(10,20)) 	
+	// fmt.Println(add(10,20))
 
-	one,two := funcWithMultipleReturn("Xatta Trone")
+	// one,two := funcWithMultipleReturn("Xatta Trone")
 
-	fmt.Println(one,two)
+	// fmt.Println(one,two)
+
+	// go run main.go greetings.go
+	sayHello("asdf")
 
 }
 
 func begum(n string) {
-	fmt.Println("begum",n)
+	fmt.Println("begum", n)
 }
 
-func add(a float64, b float64)  float64 {
-	return (a+b);
+func add(a float64, b float64) float64 {
+	return (a + b)
 }
 
-func testFunc(n []string, f func(string)){
+func testFunc(n []string, f func(string)) {
 	for _, v := range n {
 		f(v)
 	}
 }
 
-func funcWithMultipleReturn(n string) (string,string){
+func funcWithMultipleReturn(n string) (string, string) {
 
 	s := strings.ToUpper(n)
 
-	names := strings.Split(s," ")
+	names := strings.Split(s, " ")
 
 	var initials []string
 
@@ -116,12 +119,11 @@ func funcWithMultipleReturn(n string) (string,string){
 		initials = append(initials, v[:1])
 	}
 
-
-	// check the length 
+	// check the length
 	if len(initials) > 1 {
 		return initials[0], initials[1]
 	}
 
-	return initials[0],""
+	return initials[0], ""
 
 }
