@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 
@@ -66,7 +69,7 @@ func main() {
 	// 	fmt.Println("index i:: ",i)
 	// }
 
-	names := []string{"asdf", "asdf", "asd"}
+	// names := []string{"asdf", "asdf", "asd"}
 
 	// // for i := 0; i < len(names); i++ {
 	// // 	fmt.Println(names[i])
@@ -78,8 +81,12 @@ func main() {
 
 	// begum("asdf")
 
-	testFunc(names,begum)
-	fmt.Println(add(10,20)) 	
+	// testFunc(names,begum)
+	// fmt.Println(add(10,20)) 	
+
+	one,two := funcWithMultipleReturn("Xatta Trone")
+
+	fmt.Println(one,two)
 
 }
 
@@ -95,4 +102,26 @@ func testFunc(n []string, f func(string)){
 	for _, v := range n {
 		f(v)
 	}
+}
+
+func funcWithMultipleReturn(n string) (string,string){
+
+	s := strings.ToUpper(n)
+
+	names := strings.Split(s," ")
+
+	var initials []string
+
+	for _, v := range names {
+		initials = append(initials, v[:1])
+	}
+
+
+	// check the length 
+	if len(initials) > 1 {
+		return initials[0], initials[1]
+	}
+
+	return initials[0],""
+
 }
