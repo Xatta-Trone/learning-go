@@ -54,5 +54,6 @@ func main() {
 	greet := "my name is xatta"
 
 	fmt.Println(strings.Contains(greet,"xatta"))
+	fmt.Println(strings.ReplaceAll(greet,"my","your"))
 
 }
