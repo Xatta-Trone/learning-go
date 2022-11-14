@@ -1,10 +1,5 @@
 package main
 
-import (
-	"fmt"
-	"strings"
-)
-
 func main() {
 
 	// fmt.Println("test")
@@ -51,9 +46,31 @@ func main() {
 
 	// fmt.Println(rangeOne)
 
-	greet := "my name is xatta"
+	// greet := "my name is xatta"
 
-	fmt.Println(strings.Contains(greet,"xatta"))
-	fmt.Println(strings.ReplaceAll(greet,"my","your"))
+	// fmt.Println(strings.Contains(greet,"xatta"))
+	// fmt.Println(strings.ReplaceAll(greet,"my","your"))
 
+	// loops
+
+	// x := 0
+
+	// for x < 5 {
+	// 	fmt.Println("index :: ",x)
+	// 	x++
+	// }
+
+	// for i := 0; i < 10; i++ {
+	// 	fmt.Println("index i:: ",i)
+	// }
+
+	// names := []string{"asdf", "asdf", "asd"}
+
+	// // for i := 0; i < len(names); i++ {
+	// // 	fmt.Println(names[i])
+	// // }
+
+	// for index, v := range names {
+	// 	fmt.Println(v, index)
+	// }
 }
