@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 
 	// fmt.Println("test")
@@ -64,7 +66,7 @@ func main() {
 	// 	fmt.Println("index i:: ",i)
 	// }
 
-	// names := []string{"asdf", "asdf", "asd"}
+	names := []string{"asdf", "asdf", "asd"}
 
 	// // for i := 0; i < len(names); i++ {
 	// // 	fmt.Println(names[i])
@@ -73,4 +75,24 @@ func main() {
 	// for index, v := range names {
 	// 	fmt.Println(v, index)
 	// }
+
+	// begum("asdf")
+
+	testFunc(names,begum)
+	fmt.Println(add(10,20)) 	
+
+}
+
+func begum(n string) {
+	fmt.Println("begum",n)
+}
+
+func add(a float64, b float64)  float64 {
+	return (a+b);
+}
+
+func testFunc(n []string, f func(string)){
+	for _, v := range n {
+		f(v)
+	}
 }
