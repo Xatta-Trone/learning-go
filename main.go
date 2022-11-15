@@ -89,7 +89,49 @@ func main() {
 	// fmt.Println(one,two)
 
 	// go run main.go greetings.go
-	sayHello("asdf")
+	// sayHello("asdf")
+
+	// // maps
+
+	// menu := map[string]float64{
+	// 	"soup":   6.44,
+	// 	"pie":    7.99,
+	// 	"salad":  6.99,
+	// 	"toffee": 3.55,
+	// }
+
+	// fmt.Println(menu, menu["pie"])
+
+	// // map loops
+
+	// for k, v := range menu {
+	// 	fmt.Println(k, v)
+
+	// }
+
+	// // int as key type
+
+	// phonebook := map[int]string{
+	// 	1 : "asdf",
+	// 	2 : "SDF",
+	// }
+	// fmt.Println(phonebook, phonebook[1])
+
+	// // map loops
+
+	// for k, v := range phonebook {
+	// 	fmt.Println(k, v)
+
+	// }
+
+	// // update item 
+
+	// phonebook[1] = "xatta"
+
+
+	// fmt.Println(phonebook, phonebook[1])
+
+
 
 }
 
