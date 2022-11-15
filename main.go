@@ -131,6 +131,17 @@ func main() {
 
 	// fmt.Println(phonebook, phonebook[1])
 
+	// struct and customs
+
+	mybill := newBill("xatta's bill")
+
+	mybill.updateTip(10)
+
+	mybill.addItem("xatta",10.0)
+	mybill.addItem("trone",15.0)
+
+	fmt.Println(mybill.format())
+
 
 
 }
