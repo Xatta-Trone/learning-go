@@ -1,0 +1,5 @@
+Bill breakdown: 
+er:                       ... $4 
+sdf:                      ... $5 
+tip:                      ... $0.00 
+total:                    ... $9.00 
